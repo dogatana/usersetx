@@ -24,12 +24,12 @@ namespace usersetx
 
         static void SetVariable(string name, string value)
         {
-            //Environment.SetEnvironmentVariable(name, value, EnvironmentVariableTarget.User);
+            Environment.SetEnvironmentVariable(name, value, EnvironmentVariableTarget.User);
             Console.WriteLine($"set {name}={value}");
         }
         static void UnsetVariable(string name)
         {
-            //Environment.SetEnvironmentVariable(name, null, EnvironmentVariableTarget.User);
+            Environment.SetEnvironmentVariable(name, null, EnvironmentVariableTarget.User);
             Console.WriteLine($"unset {name}");
         }
 
